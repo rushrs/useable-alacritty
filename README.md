@@ -22,7 +22,7 @@ npm install -g alacritty-theme-switch
 ```
 alacritty-theme-switch
 ```
-## Optional - Useable tmux
+## Optional - useable-tmux
 
 installs tmux onto your machine with a useable configuration.
 ```
