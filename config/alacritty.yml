@@ -1,0 +1,88 @@
+# Configuration for Alacritty, the GPU enhanced terminal emulator.
+window:
+  padding:
+    x: 15
+    y: 35
+  dynamic_padding: true
+  decorations: transparent
+  startup_mode: Windowed
+  title: Terminal
+  dynamic_title: true
+font:
+  normal:
+    family: FiraCode Nerd Font Mono
+    style: Retina
+  bold:
+    family: FiraCode Nerd Font Mono
+    style: Bold
+  italic:
+    family: FiraCode Nerd Font Mono
+    style: Italic
+  bold_italic:
+    family: FiraCode Nerd Font Mono
+    style: Bold Italic
+  size: 12.0
+bell:
+  animation: EaseOutExpo
+  duration: 1
+  color: '#ffffff'
+background_opacity: 0.98
+selection:
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+  save_to_clipboard: true
+cursor:
+  style:
+    # Cursor shape
+    # Values for `shape`:
+    #   - ▇ Block
+    #   - _ Underline
+    #   - | Beam
+    shape: Beam
+    # Cursor blinking state
+    #
+    # Values for `blinking`:
+    #   - Never: Prevent the cursor from ever blinking
+    #   - Off: Disable blinking by default
+    #   - On: Enable blinking by default
+    #   - Always: Force the cursor to always blink
+    blinking: Always
+live_config_reload: true
+# Default:
+#   - (macOS) /bin/bash --login
+#   - (Linux/BSD) user login shell
+#   - (Windows) powershell
+shell:
+  program: /bin/zsh
+  args:
+    - -l
+    - -c
+    - tmux
+key_bindings:
+  - { key: Key3, mods: Alt, chars: "#" }
+colors:
+  # Default colors
+  primary:
+    background: '#161821'
+    foreground: '#d2d4de'
+
+  # Normal colors
+  normal:
+    black: '#161821'
+    red: '#e27878'
+    green: '#b4be82'
+    yellow: '#e2a478'
+    blue: '#84a0c6'
+    magenta: '#a093c7'
+    cyan: '#89b8c2'
+    white: '#c6c8d1'
+
+  # Bright colors
+  bright:
+    black: '#6b7089'
+    red: '#e98989'
+    green: '#c0ca8e'
+    yellow: '#e9b189'
+    blue: '#91acd1'
+    magenta: '#ada0d3'
+    cyan: '#95c4ce'
+    white: '#d2d4de'
