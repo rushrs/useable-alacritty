@@ -10,6 +10,12 @@
 ```
 xattr -d com.apple.quarantine /Applications/Alacritty.app
 ```
+
+### Post Install Script
+```
+./alacritty-post-install.sh
+```
+
 ## Theme Switcher
 [Alacritty Theme Switcher](https://github.com/tichopad/alacritty-theme-switch)
 
